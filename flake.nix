@@ -20,7 +20,7 @@
     };
 
     packages."${system}" = {
-      format-script = pkgs.writeShellScript "formatting" ''
+      format-script = pkgs.writeShellScriptBin "formatting" ''
         echo Formatting markdown files
         ${pkgs.nodePackages.prettier}/bin/prettier --write $(find . -name '*.md')
 
