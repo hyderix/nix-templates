@@ -1,7 +1,7 @@
 {
   description = "hyderix collection of nix templates";
 
-  outputs = { self }: {
+  outputs = {self}: {
     templates = {
       unstable-flake = {
         path = ./unstable-flake;
