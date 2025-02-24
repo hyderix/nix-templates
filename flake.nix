@@ -17,6 +17,10 @@
         path = ./unstable-flake;
         description = "A basic flake template with unstable nixpkgs";
       };
+      devshell = {
+        path = ./devshell;
+        description = "A basic template for a development shell for use with `nix develop`";
+      };
     };
 
     packages."${system}" = {
