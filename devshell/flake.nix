@@ -14,7 +14,7 @@
     utils.lib.eachDefaultSystem (system: let
       pkgs = import <nixpkgs> {inherit system;};
     in {
-      devShells."${system}".default = pkgs.mkShell {
+      devShells.default = pkgs.mkShell {
         name = "Development shell";
         packages = with pkgs; [
           /*
